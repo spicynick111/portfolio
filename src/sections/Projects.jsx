@@ -193,16 +193,17 @@ export default function Projects() {
                 key={idx}
                 className={`indicator w-4 h-4 rounded-full border-2 ${idx === current ? 'bg-sky-400 border-sky-400 scale-125 shadow-lg' : 'bg-sky-200/20 border-sky-200/40'} transition-all`}
                 onClick={() => goToProject(idx)}
+                onTouchStart={() => goToProject(idx)}
                 aria-label={`Go to project ${idx + 1}`}
               />
             ))}
           </div>
           {/* Navigation */}
           <div className="navigation flex gap-4 mt-6 justify-center w-full">
-            <button onClick={prevProject} className="nav-arrow px-4 h-10 rounded-full bg-sky-200/10 border border-sky-400/40 flex items-center justify-center shadow-md hover:bg-sky-400 hover:border-sky-400 transition-all focus:outline-none">
+            <button onClick={prevProject} onTouchStart={prevProject} className="nav-arrow px-4 h-10 rounded-full bg-sky-200/10 border border-sky-400/40 flex items-center justify-center shadow-md hover:bg-sky-400 hover:border-sky-400 transition-all focus:outline-none">
               <svg viewBox="0 0 24 24" className="w-5 h-5 fill-sky-400"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
             </button>
-            <button onClick={nextProject} className="nav-arrow px-4 h-10 rounded-full bg-sky-200/10 border border-sky-400/40 flex items-center justify-center shadow-md hover:bg-sky-400 hover:border-sky-400 transition-all focus:outline-none">
+            <button onClick={nextProject} onTouchStart={nextProject} className="nav-arrow px-4 h-10 rounded-full bg-sky-200/10 border border-sky-400/40 flex items-center justify-center shadow-md hover:bg-sky-400 hover:border-sky-400 transition-all focus:outline-none">
               <svg viewBox="0 0 24 24" className="w-5 h-5 fill-sky-400"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
             </button>
           </div>
