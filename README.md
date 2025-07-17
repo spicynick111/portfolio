@@ -126,4 +126,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-Made with ❤️ using React, Vite, and Tailwind CSS 
+Made with ❤️ using React, Vite, and Tailwind CSS
