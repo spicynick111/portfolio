@@ -21,7 +21,7 @@ const projects = [
     ],
     image: "/assets/projects/welth.jpg", // updated to use image
     icon: "💰",
-    link: "https://example.com/welth",
+    link: "https://github.com/spicynick111/FinForge-",
   },
   {
     title: "AI SaaS Application with Subscriptions",
@@ -39,7 +39,7 @@ const projects = [
     ],
     image: "/assets/projects/ai-saas.jpg",
     icon: null,
-    link: "https://example.com/ai-saas",
+    link: "https://github.com/spicynick111/quickai-saas",
   },
   {
     title: "LLM Semantic Book Recommender",
@@ -57,7 +57,7 @@ const projects = [
     ],
     image: "/assets/projects/llm-book-recommender.jpg", // updated to use image
     icon: "📚",
-    link: "https://example.com/book-recommender",
+    link: "https://github.com/spicynick111/semantic_book_recommendation_system",
   },
   {
     title: "CricPulse 2025 | Cricket Analytics Platform",
@@ -75,7 +75,7 @@ const projects = [
     ],
     image: "/assets/projects/cricpulse-2025.jpg",
     icon: null,
-    link: "https://example.com/cricpulse",
+    link: "https://github.com/spicynick111/cricpulse-2025",
   },
   {
     title: "Cryptocurrency Price Tracker",
@@ -91,7 +91,7 @@ const projects = [
     ],
     image: "/assets/projects/crypto-tracker.jpg",
     icon: null,
-    link: "https://example.com/crypto-tracker",
+    link: "https://github.com/spicynick111/cryptoplace",
   },
 ];
 
@@ -154,7 +154,7 @@ export default function Projects() {
             ))}
           </div>
           <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link inline-block bg-gradient-to-r from-sky-400 to-purple-500 text-white px-6 py-2 rounded-full font-bold shadow-lg hover:scale-105 transition-transform">
-            View Live Project →
+            Source Code
           </a>
         </div>
         {/* 3D Computer Model (static, with project image/icon) */}

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { Typewriter } from 'react-simple-typewriter';
-import SortingVisualizerGame from '../components/SortingVisualizerGame';
 
 const aboutCards = [
   {
@@ -29,8 +28,6 @@ const aboutCards = [
 const journeyText = `Hello! I'm Aryan, a Computer Science student from BIT Mesra, with a keen interest in software development, web technologies, and machine learning.\n\nI also have a strong interest in mathematics, which enhances my problem-solving skills and helps me think more logically while coding.\n\nI'm always open to learning, collaborating on meaningful projects, and growing as a developer.\n\nWhen I'm not coding, I enjoy reading about AI trends, experimenting with UI designs, or exploring open-source contributions.`;
 
 export default function About() {
-  const [showGame, setShowGame] = useState(false);
-
   return (
     <section
       id="about"
@@ -126,21 +123,6 @@ export default function About() {
         </div>
           </div>
         </div>
-        {/* Sorting Visualizer Game Button */}
-        <div className="mt-8">
-          <button
-            onClick={() => setShowGame((prev) => !prev)}
-            className="bg-gradient-to-r from-sky-400 to-purple-500 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:scale-110 transition-transform float-btn hover:glow-btn"
-          >
-            <span className="glowing-text-pink">Guess the Sort</span>
-          </button>
-          </div>
-        {/* Sorting Visualizer Game (conditionally rendered) */}
-        {showGame && (
-          <div className="w-full bg-gray-800 rounded-2xl shadow-2xl p-6 mt-6">
-            <SortingVisualizerGame />
-          </div>
-        )}
       </div>
 
       {/* Lottie Player Script */}

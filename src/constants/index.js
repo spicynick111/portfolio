@@ -225,14 +225,14 @@ export const myProjects = [
 
 export const mySocials = [
   {
-    name: "Linkedin",
-    href: "https://www.linkedin.com/in/ali-sanati/",
-    icon: "/assets/socials/linkedIn.svg",
+    name: "Gmail",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=rehan17400578@gmail.com",
+    icon: "/assets/socials/gmail.svg",
   },
   {
     name: "GitHub",
-    href: "https://github.com/aryankumarxyz",
-    icon: "/assets/logos/github.svg", // keep as logos path since socials does not have github.svg
+    href: "https://github.com/spicynick111",
+    icon: "/assets/socials/github.svg",
   },
 ];
 
